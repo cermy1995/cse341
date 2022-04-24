@@ -2,9 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connection');
 
-const app = express();
 
 const port = process.env.PORT || 3000;
+const app = express();
 
 app
   .use(bodyParser.json())
@@ -15,7 +15,7 @@ app
   })
   .use('/', require('./routes'));
 
-mongodb.initDb((err, mongodb) =>{
+mongodb.initDb((err, mongodb) => {
     if(err){
         console.log(err);
     } else {

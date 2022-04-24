@@ -8,7 +8,7 @@ const getAllContacts = async (req, res, next) => {
     .db()
     .collection('contacts')
     .find();
-    payload.toArray().then((lists) =>{
+    payload.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
     });
@@ -31,5 +31,5 @@ const getSingleContact = async (req, res, next) => {
 
 module.exports = {
     getAllContacts, 
-    getSingleContact,
+    getSingleContact
 };
