@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "firstName": "Gordon",
+        "lastName": "Wallace",
+        "email": "amazingweirdo@test.com",
+        "favoriteColor": "orange",
+        "birthday": "07/23/1992"
+    },
+    "contact2": {
+        "firstName": "Camille",
+        "lastName": "Gray",
+        "email": "mom@test.com",
+        "favoriteColor": "blue",
+        "birthday": "06/15/1971"
+    },
+    "contact3": {
+        "firstName": "Chrissy",
+        "lastName": "Gray",
+        "email": "crazysister@test.com",
+        "favoriteColor": "purple",
+        "birthday": "12/23/1992"
+    }
+}
