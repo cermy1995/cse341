@@ -1,7 +1,7 @@
-// LOCALHOST ### GET http://localhost:3000/contacts 
-             ### GET http://localhost:3000/contacts/6263aba12cd4e63ffb013688 
-             ### GET http://localhost:3000/contacts/6263aba12cd4e63ffb013689
-             ### GET http://localhost:3000/contacts/6263aba12cd4e63ffb01368a
+// LOCALHOST ### GET http://localhost:8080/contacts 
+             ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb013688 
+             ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb013689
+             ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb01368a
 
 // PRODUCTION Deploy ### GET https://cw-cs341.herokuapp.com/contacts 
                      ### GET https://cw-cs341.herokuapp.com/contacts/6263aba12cd4e63ffb013688 
