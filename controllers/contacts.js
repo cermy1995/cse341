@@ -12,6 +12,7 @@ const getAllContacts = async (req, res, next) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
     });
+    console.log(payload);
 };
 
 //function for getting a single contact from mongodb via id
