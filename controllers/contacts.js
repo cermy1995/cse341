@@ -30,20 +30,22 @@ const getSingleContact = async (req, res, next) => {
 };
 
 //function for createing a new contact
-const createContact = async (req, res, next) => {
+const createContact = async (req, res) => {
     //POST request body
-    const newContact = {
+    const contact = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
+    console.log("made it here!")
+    console.log(req.body);
     const response = await mongodb
         .getDb()
         .db()
         .collection('contacts')
-        .insertOne(newContact);
+        .insertOne(contact);
     if (response.acknowldged) {
         res.status(201).json(response);
     } else {
