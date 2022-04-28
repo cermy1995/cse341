@@ -2,8 +2,26 @@
              ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb013688 
              ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb013689
              ### GET http://localhost:8080/contacts/6263aba12cd4e63ffb01368a
+             ### POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+                {
+                    "firstName":"Billy Bob", "lastName":"Joe", "email":"test123@test.com", "favoriteColor":"Rainbow", "birthday":"11/11/1111"
+                }
+             ### PUT http://localhost:8080/contacts/6263aba12cd4e63ffb013689 HTTP/1.1 content-type: application/json
+                {
+                    "firstName":"Camille", "lastName":"Gray", "email":"momtest@test.com", "favoriteColor":"light blue", "birthday":"06/15/1971"
+                }
+             ### DELETE contact DELETE http://localhost:8080/contacts/626a15241d92dcdb81f05cea
 
 // PRODUCTION Deploy ### GET https://cw-cs341.herokuapp.com/contacts 
                      ### GET https://cw-cs341.herokuapp.com/contacts/6263aba12cd4e63ffb013688 
                      ### GET https://cw-cs341.herokuapp.com/contacts/6263aba12cd4e63ffb013689 
                      ### GET https://cw-cs341.herokuapp.com/contacts/6263aba12cd4e63ffb01368a
+                     ### POST https://cw-cs341.herokuapp.com/contacts HTTP/1.1 content-type: application/json
+                        {
+                            "firstName":"Billy Bob", "lastName":"Joe", "email":"test123@test.com", "favoriteColor":"Rainbow", "birthday":"11/11/1111"
+                        }
+                     ### PUT https://cw-cs341.herokuapp.com/contacts/6263aba12cd4e63ffb013689 HTTP/1.1 content-type: application/json
+                        {
+                            "firstName":"Camille", "lastName":"Gray", "email":"momtest@test.com", "favoriteColor":"light blue", "birthday":"06/15/1971"
+                        }
+                     ### DELETE contact DELETE http://localhost:8080/contacts/626a162d1d92dcdb81f05ced
