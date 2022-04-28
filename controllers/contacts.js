@@ -46,12 +46,12 @@ const createContact = async (req, res) => {
         .db()
         .collection('contacts')
         .insertOne(contact);
-    console.log("response: " + response.acknowledged);
-    if (response.acknowledged) {
         res.status(201).json(response);
-    } else {
-        res.status(500).json(response.error || 'An Error has occurred trying to create contact');
-    }
+    // if (response != null) {
+    //     res.status(201).json(response);
+    // } else {
+    //     res.status(500).json(response.error || 'An Error has occurred trying to create contact');
+    // }
 };
 
 const updateContact = async (req, res) => {
