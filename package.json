@@ -4,11 +4,12 @@
   "description": "",
   "engines": {
     "node": "12.11.1"
-    },
+  },
   "main": "server.js",
   "scripts": {
     "test": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "swagger": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,11 @@
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mongodb": "^4.5.0"
+    "mongodb": "^4.5.0",
+    "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "swagger-autogen": "^2.21.1"
   }
 }
